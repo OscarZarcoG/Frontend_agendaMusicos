@@ -38,7 +38,7 @@ To get the development environment running, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/oscar-rs/agenda-musicos-frontend.git
+    git clone https://github.com/OscarZarcoG/Frontend_agendaMusicos.git
     cd agenda-musicos-frontend
     ```
 
@@ -71,5 +71,5 @@ In the project directory, you can run the following scripts:
 
 ## 👤 Author
 
--   **Oscar R. S.**
--   **GitHub:** [oscar-rs](https://github.com/oscar-rs)
+-   **Oscar Zarco G**
+-   **GitHub:** [OscarZarcoG](https://github.com/OscarZarcoG)
