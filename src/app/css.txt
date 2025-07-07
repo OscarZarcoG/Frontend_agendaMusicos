@@ -1,0 +1,50 @@
+/* Estilos base para asegurar que los temas funcionen correctamente */
+* {
+  border-color: theme('colors.gray.200');
+}
+
+.dark * {
+  border-color: theme('colors.gray.700');
+}
+
+/* Forzar estilos base para el body y html */
+body, html {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Tema claro */
+.light body, .light html, body, html {
+  background-color: white !important;
+  color: rgb(17 24 39) !important;
+}
+
+/* Tema oscuro */
+.dark body, .dark html {
+  background-color: rgb(17 24 39) !important;
+  color: rgb(243 244 246) !important;
+}
+
+/* Asegurar que los elementos con clases de Tailwind funcionen */
+.bg-white {
+  background-color: white !important;
+}
+
+.dark .dark\:bg-gray-800 {
+  background-color: rgb(31 41 55) !important;
+}
+
+.dark .dark\:bg-gray-900 {
+  background-color: rgb(17 24 39) !important;
+}
+
+.text-gray-900 {
+  color: rgb(17 24 39) !important;
+}
+
+.dark .dark\:text-gray-100 {
+  color: rgb(243 244 246) !important;
+}
+
+.dark .dark\:text-white {
+  color: white !important;
+}

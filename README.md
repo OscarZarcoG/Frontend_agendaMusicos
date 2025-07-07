@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Agenda Músicos - Frontend
 
-## Getting Started
+This is the frontend for the Agenda Músicos application, a web platform designed to help musicians manage their gigs, clients, and contracts efficiently.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Dashboard:** An overview of upcoming events, recent activity, and key statistics.
+- **Gig Management:** Create, view, update, and delete gigs.
+- **Client Administration:** Manage client information and contact details.
+- **Contract Generation:** Automatically generate contracts for gigs in DOCX and PDF formats.
+- **User Authentication:** Secure login and registration system.
+- **Responsive Design:** A clean and modern user interface that works on all devices.
+
+## 🚀 Technologies
+
+This project is built with the latest web technologies to ensure a high-quality user experience and maintainable codebase.
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+
+## 📂 Project Structure
+
+The project follows a standard Next.js `app` directory structure:
+
+```
+/src
+├── app/              # Main application routes and pages
+├── components/       # Reusable UI components
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions and API helpers
+├── services/         # API service definitions
+├── types/            # TypeScript type definitions
+└── utils/            # General utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Environment Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To get the development environment running, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/oscar-rs/agenda-musicos-frontend.git
+    cd agenda-musicos-frontend
+    ```
 
-## Learn More
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3.  **Set up environment variables:**
+    Create a `.env.local` file in the root of the project and add the necessary environment variables, such as the API endpoint:
+    ```
+    NEXT_PUBLIC_API_URL=http://localhost:8000/api
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    The application will be available at `http://localhost:3000`.
 
-## Deploy on Vercel
+## 📜 Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In the project directory, you can run the following scripts:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   `npm run dev`: Runs the app in development mode.
+-   `npm run build`: Builds the app for production.
+-   `npm run start`: Starts a production server.
+-   `npm run lint`: Lints the code to catch errors.
+
+## 👤 Author
+
+-   **Oscar R. S.**
+-   **GitHub:** [oscar-rs](https://github.com/oscar-rs)
