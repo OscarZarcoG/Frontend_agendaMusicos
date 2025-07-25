@@ -1,11 +1,10 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
 import { ApiError } from '@/types';
 
-// API Configuration
+
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
 const API_TIMEOUT = parseInt(process.env.NEXT_PUBLIC_API_TIMEOUT || '10000');
 
-// Create axios instance
 const api: AxiosInstance = axios.create({
   baseURL: API_BASE_URL,
   timeout: API_TIMEOUT,
@@ -14,10 +13,8 @@ const api: AxiosInstance = axios.create({
   },
 });
 
-// Request interceptor
 api.interceptors.request.use(
   (config) => {
-    // Add auth token if available
     if (typeof window !== 'undefined') {
       const token = localStorage.getItem('authToken');
       if (token) {
@@ -31,13 +28,11 @@ api.interceptors.request.use(
   }
 );
 
-// Response interceptor
 api.interceptors.response.use(
   (response: AxiosResponse) => {
     return response;
   },
   (error) => {
-    // Handle 401 Unauthorized - token expired or invalid
     if (error.response?.status === 401) {
       if (typeof window !== 'undefined') {
         localStorage.removeItem('authToken');
