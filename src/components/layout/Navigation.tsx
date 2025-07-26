@@ -101,7 +101,7 @@ const Navigation: React.FC = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-xl font-bold text-gray-900 dark:text-white transition-colors duration-200">Agenda Músicos</h1>
+                <h1 className="text-xl font-bold text-gray-900 dark:text-white transition-colors duration-200">MuZapp</h1>
               </div>
             </Link>
           </div>

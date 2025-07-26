@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const metadata: Metadata = {
-  title: "Agenda Músicos",
+  title: "MuZapp",
   description: "Sistema de gestión para músicos y eventos musicales",
 };
 
